@@ -51,6 +51,18 @@ fon.style.backgroundImage='url("img/bg.jpg")';
 {/* <img src="img/bg.jpg"></img> */}
 //fon.background-Image("img/bg.jpg");
 
+const ackButton2=document.querySelector('#ackButton');
+console.log(ackButton2);
+ackButton2.addEventListener('click',()=>{
+    //  filmlist.innerHTML+=`
+    //  <li class="promo__interactive-item">${1} jkhkj
+    //  <div class="delete"></div>
+    //  </li>`;
+    document.querySelector('.promo__adv-title').innerHTML="qqq";
+    movieDB.movies.push("ddd");
+    console.log(movieDB.movies);
+});
+
 const filmlist=document.querySelector('.promo__interactive-list');
 filmlist.innerHTML="";
 movieDB.movies.sort();
@@ -61,6 +73,8 @@ movieDB.movies.forEach((item,i)=>{
         </li>`;
     
 });
+
+
 
 
 // for (let i=0;i++;i<movieDB.movies.length) {
